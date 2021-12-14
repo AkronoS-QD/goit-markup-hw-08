@@ -1,0 +1,27 @@
+@import "./utils/variables";
+@import "./base/reset";
+@import "./base/common";
+@import "./components/container";
+//
+@import "./layout/page-header";
+@import "./layout/logo";
+//
+@import "./layout/web-studio/section-hero-web";
+@import "./layout/web-studio/section-goal";
+@import "./layout/web-studio/section-presentation";
+@import "./layout/web-studio/section-our-team";
+@import "./components/social-net-list";
+@import "./layout/web-studio/section-client";
+@import "./components/footer-container";
+@import "./layout/page-footer";
+@import "./components/backdrop";
+@import "./layout/modal-form";
+@import "./layout/modal-check";
+@import "./layout/modal-submit";
+//
+@import "./utils/hidden";
+@import "./layout/portfolio/porfolio-btn-filtr";
+@import "./layout/portfolio/portfolio-cards";
+@import "./layout/portfolio/portfolio-overlay";
+@import "./layout/portfolio/portfolio-card-frame";
+//

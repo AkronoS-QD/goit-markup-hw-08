@@ -1,0 +1,26 @@
+.feature-list__frame {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.feature-list__label {
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  color: $title-text-color;
+}
+
+.feature-list__application {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.87;
+  color: #757575;
+}

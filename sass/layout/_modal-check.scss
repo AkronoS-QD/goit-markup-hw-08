@@ -1,0 +1,41 @@
+/* -----------------------------------check------------------------------ */
+.check {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-left: 13px;
+}
+
+.check__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  &:checked + .check__box {
+    border-color: transparent;
+    background-color: $accent-color;
+    background-size: contain;
+    background-origin: border-box;
+  }
+  &:focus + .check__box {
+    border-color: $accent-color;
+  }
+}
+
+.check__box {
+  display: flex;
+  width: 18px;
+  height: 17px;
+  border: 2px solid $title-text-color;
+  border-radius: 4px;
+  margin-right: 7px;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 750ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.check__icon {
+  fill: $primary-white-color;
+}

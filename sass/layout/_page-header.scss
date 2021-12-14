@@ -1,0 +1,88 @@
+.header {
+  display: flex;
+  align-items: center;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ececec;
+  background-color: #fff;
+}
+
+// ----------------------- навигация  -----------------------
+.site-nav {
+  margin-left: 93px;
+}
+
+.site-nav__nav-panel {
+  display: flex;
+}
+
+.site-nav__link {
+  position: relative;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+  color: $title-text-color;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.site-nav__item {
+  margin-left: 50px;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+// -------------------- контакты --------------------
+.contact {
+  display: flex;
+  margin-left: auto;
+}
+
+.contact__item {
+  margin-left: 50px;
+}
+
+.contact__mail-link,
+.contact__tel-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--primary-text-color);
+  fill: var(--primary-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    fill: $accent-color;
+  }
+}
+
+.contact__icon-envelope {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.contact__icon-smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
