@@ -3,7 +3,10 @@
   <head>
     <!-- head info -->
     <meta charset="utf-8" />
-    <meta name="description" content="webstudio" />
+    <meta
+      name="viewport"
+      content="webstudio, width=device-width, initial-scale=1.0"
+    />
     <title>Web Studio (version 2.1)</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,48 +24,68 @@
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body>
-    <!-- header -->
-    <header class="header container">
-      <a href="./index.html" class="logo"
-        ><span class="accent-logo">Web</span>Studio</a
-      >
-      <nav class="site-nav">
-        <ul class="site-nav__nav-panel">
-          <li class="site-nav__item">
-            <a class="site-nav__link currentlink" href="./index.html">Студия</a>
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- Контакты -->
-      <ul class="contact">
-        <!-- Ссылка на адрес электронной почты -->
-        <li class="contact__item">
-          <a class="contact__mail-link" href="malito:info@devstudio.com">
-            <svg class="contact__icon-envelope">
-              <use href="./images/icons.svg#icon-envelope"></use>
+    <header class="header">
+      <div class="container">
+        <a href="./index.html" class="logo"
+          ><span class="accent-logo">Web</span>Studio</a
+        >
+        <div class="main-nav menu-container js-menu-container" id="mobile-menu">
+          <button type="button" class="menu-toggle js-close-menu">
+            <svg
+              width="40"
+              height="40"
+              aria-controls="menu-container"
+              aria-label="Переключатель меню"
+            >
+              <use
+                class="menu-button__icon-cross"
+                href="images/icons.svg#icon-close"
+              ></use>
+              <use
+                class="menu-button__icon-menu"
+                href="images/icons.svg#icon-menu-mobile"
+              ></use>
             </svg>
-            info@devstudio.com</a
-          >
-        </li>
-        <!-- Ссылка на телефонный номер -->
-        <li class="contact__item">
-          <a class="contact__tel-link" href="tel:+380961111111">
-            <svg class="contact__icon-smartphone">
-              <use href="./images/icons.svg#icon-smartphone"></use>
-            </svg>
-            +38 099 111 11 11</a
-          >
-        </li>
-      </ul>
+          </button>
+          <div class="mobile-menu" id="mobile-menu">Контент меню</div>
+          <nav class="site-nav">
+            <ul class="site-nav__nav-panel">
+              <li class="site-nav__item">
+                <a class="site-nav__link currentlink" href="./index.html"
+                  >Студия</a
+                >
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="contact mobile-menu">
+            <li class="contact__item">
+              <a class="contact__mail-link" href="malito:info@devstudio.com">
+                <svg class="contact__icon-envelope">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="contact__item">
+              <a class="contact__tel-link" href="tel:+380961111111">
+                <svg class="contact__icon-smartphone">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 099 111 11 11
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
-    <!-- герой -->
     <main>
+      <!-- герой -->
       <section class="hero">
         <h1 class="hero__title">
           Эффективные решения <br />
@@ -191,13 +214,7 @@
           <h2 class="our-team__title section-title">Наша команда</h2>
           <ul class="our-team__list-team">
             <li class="our-team__item">
-              <img
-                class="our-team__card"
-                src="images/img-4.jpg"
-                alt="img-4"
-                width="270"
-                height="260"
-              />
+              <img class="our-team__card" src="images/img-4.jpg" alt="img-4" />
               <div class="our-team__member">
                 <h3 class="our-team__staff section-title">Игорь Демьяненко</h3>
                 <p class="our-team__job">Product Designer</p>
@@ -234,13 +251,7 @@
               </div>
             </li>
             <li class="our-team__item">
-              <img
-                class="our-team__card"
-                src="images/img-5.jpg"
-                alt="img-5"
-                width="270"
-                height="260"
-              />
+              <img class="our-team__card" src="images/img-5.jpg" alt="img-5" />
               <div class="our-team__member">
                 <h3 class="our-team__staff section-title">Ольга Репина</h3>
                 <p class="our-team__job">Frontend Developer</p>
@@ -277,13 +288,7 @@
               </div>
             </li>
             <li class="our-team__item">
-              <img
-                class="our-team__card"
-                src="images/img-6.jpg"
-                alt="img-6"
-                width="270"
-                height="260"
-              />
+              <img class="our-team__card" src="images/img-6.jpg" alt="img-6" />
               <div class="our-team__member">
                 <h3 class="our-team__staff section-title">Николай Тарасов</h3>
                 <p class="our-team__job">Marketing</p>
@@ -320,13 +325,7 @@
               </div>
             </li>
             <li class="our-team__item">
-              <img
-                class="our-team__card"
-                src="images/img-7.jpg"
-                alt="img-7"
-                width="270"
-                height="260"
-              />
+              <img class="our-team__card" src="images/img-7.jpg" alt="img-7" />
               <div class="our-team__member">
                 <h3 class="our-team__staff section-title">Михаил Ермаков</h3>
                 <p class="our-team__job">UI Designer</p>
@@ -416,7 +415,7 @@
       </section>
     </main>
     <!-- Page footer -->
-    <footer class="page-footer">
+    <!-- <footer class="page-footer">
       <div class="container footer-container">
         <div class="address-info">
           <div class="footer-logo">
@@ -425,10 +424,8 @@
               ><span class="page-footer__logo">Studio</span></a
             >
           </div>
-          <!-- adress -->
           <address class="address">г. Киев, пр-т Лес и Украинки, 26</address>
           <ul class="footer-contact">
-            <!-- Ссылка на адрес электронной почты -->
             <li class="footer-contact__item">
               <a
                 class="footer-contact__mail-link"
@@ -436,7 +433,6 @@
                 >info@devstudio.com</a
               >
             </li>
-            <!-- Ссылка на телефонный номер -->
             <li class="footer-contact__item">
               <a class="footer-contact__tel-link" href="tel:+380961111111"
                 >+38 099 111 11 11</a
@@ -495,7 +491,7 @@
           </button>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <!-- Модалка -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -565,6 +561,13 @@
         </form>
       </div>
     </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./modal.js"></script>
   </body>
 </html>
