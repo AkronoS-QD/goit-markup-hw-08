@@ -31,17 +31,17 @@
             ><span class="accent-logo">Web</span>Studio</a
           >
           <button
-          class="menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg  width="40" height="40">
-            <use
-              class="menu-button__icon-menu"
-              href="images/icons.svg#icon-menu-mobile"
-            ></use>
-          </svg>
-        </button>
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="40" height="40">
+              <use
+                class="menu-button__icon-menu"
+                href="images/icons.svg#icon-menu-mobile"
+              ></use>
+            </svg>
+          </button>
           <nav class="site-nav">
             <ul class="site-nav__nav-panel">
               <li class="site-nav__item">
@@ -79,56 +79,65 @@
             <button class="menu-toggle js-close-menu">
               <svg width="40" height="40">
                 <use
-                class="menu-button__icon-cross"
-                href="images/icons.svg#icon-close"
-              ></use>
-            </svg>
-            </button>          
-          <!-- мобильное меню -->
+                  class="menu-button__icon-cross"
+                  href="images/icons.svg#icon-close"
+                ></use>
+              </svg>
+            </button>
+            <!-- мобильное меню -->
             <div class="mobile-menu mobile-container">
-              <ul class="phone-menu">          
+              <ul class="phone-menu">
                 <li class="phone-menu__item">
-                  <a class="phone-menu__link currentlink-mobile" href="./index.html"
+                  <a
+                    class="phone-menu__link currentlink-mobile"
+                    href="./index.html"
                     >Студия</a
                   >
                 </li>
                 <li class="phone-menu__item">
-                  <a class="phone-menu__link" href="./portfolio.html">Портфолио</a>
+                  <a class="phone-menu__link" href="./portfolio.html"
+                    >Портфолио</a
+                  >
                 </li>
                 <li class="phone-menu__item">
                   <a class="phone-menu__link" href="">Контакты</a>
                 </li>
-              </ul>              
-              <ul class="mobile-contact">                
+              </ul>
+              <ul class="mobile-contact">
                 <li class="mobile-contact__item">
                   <a class="mobile-contact__link-tel" href="tel:+380961111111">
-                    <svg class="mobile-contact__icon-smartphone">
-                      <use href="./images/icons.svg#icon-smartphone"></use>
-                    </svg>
                     +38 099 111 11 11
                   </a>
                 </li>
                 <li class="mobile-contact__item">
-                  <a class="mobile-contact__link-email" href="malito:info@devstudio.com">
-                    <svg class="mobile-contact__icon-envelope">
-                      <use href="./images/icons.svg#icon-envelope"></use>
-                    </svg>
+                  <a
+                    class="mobile-contact__link-email"
+                    href="malito:info@devstudio.com"
+                  >
                     info@devstudio.com</a
                   >
                 </li>
               </ul>
               <ul class="mobile-social">
-                <li class="mobile-social__item"></li>
-                <a class="mobile-social__link" href="">Instagram</a>
-                <li class="mobile-social__item"></li>
-                <a class="mobile-social__link" href="">Twitter</a>
-                <li class="mobile-social__item"></li>
-                <a class="mobile-social__link" href="">Facebook</a>
-                <li class="mobile-social__item"></li>
-                <a class="mobile-social__link" href="">LinkedIn</a>
+                <li class="mobile-social__item">
+                  <a class="mobile-social__link" href="">Instagram</a>
+                </li>
+
+                <li class="mobile-social__item">
+                  <a class="mobile-social__link" href="">Twitter</a>
+                </li>
+
+                <li class="mobile-social__item">
+                  <a class="mobile-social__link" href="">Facebook</a>
+                </li>
+
+                <li class="mobile-social__item">
+                  <a class="mobile-social__link" href="">LinkedIn</a>
+                </li>
               </ul>
             </div>
           </div>
+        </div>
       </div>
     </header>
     <main>
@@ -212,13 +221,20 @@
           <ul class="presentation__list">
             <li class="presentation__item">
               <div class="presentation__thumb">
-                <img
-                  class="presentation__card"
-                  src="images/img-1.jpg"
-                  alt="img-1"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/web-studio/1200/img-1.jpg       1x,
+                      ./images/web-studio/1200-x2/img-1-x2.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <img
+                    class="presentation__card"
+                    src="./images/web-studio/1200/img-1.jpg"
+                    alt="img-1"
+                  />
+                </picture>
                 <div class="presentation__description">
                   Десктопные приложения
                 </div>
@@ -226,13 +242,20 @@
             </li>
             <li class="presentation__item">
               <div class="presentation__thumb">
-                <img
-                  class="presentation__card"
-                  src="images/img-2.jpg"
-                  alt="img-2"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/web-studio/1200/img-2.jpg       1x,
+                      ./images/web-studio/1200-x2/img-2-x2.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <img
+                    class="presentation__card"
+                    src="./images/web-studio/1200/img-2.jpg"
+                    alt="img-2"
+                  />
+                </picture>
                 <div class="presentation__description">
                   Мобильные приложения
                 </div>
@@ -240,13 +263,20 @@
             </li>
             <li class="presentation__item">
               <div class="presentation__thumb">
-                <img
-                  class="presentation__card"
-                  src="images/img-3.jpg"
-                  alt="img-3"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/web-studio/1200/img-3.jpg       1x,
+                      ./images/web-studio/1200-x2/img-3-x2.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <img
+                    class="presentation__card"
+                    src="./images/web-studio/1200/img-3.jpg"
+                    alt="img-3"
+                  />
+                </picture>
                 <div class="presentation__description">
                   Дизайнерские решения
                 </div>
@@ -261,7 +291,34 @@
           <h2 class="our-team__title section-title">Наша команда</h2>
           <ul class="our-team__list-team">
             <li class="our-team__item">
-              <img class="our-team__card" src="images/img-4.jpg" alt="img-4" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/web-studio/1200/img-4.jpg       1x,
+                    ./images/web-studio/1200-x2/img-4-x2.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/web-studio/768/img-4-tab.jpg       1x,
+                    ./images/web-studio/768-x2/img-4-tab-x2.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/web-studio/480/img-4-mob.jpg       1x,
+                    ./images/web-studio/480-x2/img-4-mob-x2.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  class="our-team__card"
+                  src="./images/web-studio/480/img-4-mob.jpg"
+                  alt="img-4"
+                />
+              </picture>
               <div class="our-team__member">
                 <h3 class="our-team__staff section-title">Игорь Демьяненко</h3>
                 <p class="our-team__job">Product Designer</p>
@@ -298,7 +355,34 @@
               </div>
             </li>
             <li class="our-team__item">
-              <img class="our-team__card" src="images/img-5.jpg" alt="img-5" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/web-studio/1200/img-5.jpg       1x,
+                    ./images/web-studio/1200-x2/img-5-x2.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/web-studio/768/img-5-tab.jpg       1x,
+                    ./images/web-studio/768-x2/img-5-tab-x2.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/web-studio/480/img-5-mob.jpg       1x,
+                    ./images/web-studio/480-x2/img-5-mob-x2.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  class="our-team__card"
+                  src="./images/web-studio/480/img-5-mob.jpg"
+                  alt="img-5"
+                />
+              </picture>
               <div class="our-team__member">
                 <h3 class="our-team__staff section-title">Ольга Репина</h3>
                 <p class="our-team__job">Frontend Developer</p>
@@ -335,7 +419,34 @@
               </div>
             </li>
             <li class="our-team__item">
-              <img class="our-team__card" src="images/img-6.jpg" alt="img-6" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/web-studio/1200/img-6.jpg       1x,
+                    ./images/web-studio/1200-x2/img-6-x2.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/web-studio/768/img-6-tab.jpg       1x,
+                    ./images/web-studio/768-x2/img-6-tab-x2.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/web-studio/480/img-6-mob.jpg       1x,
+                    ./images/web-studio/480-x2/img-6-mob-x2.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  class="our-team__card"
+                  src="./images/web-studio/480/img-6-mob.jpg"
+                  alt="img-6"
+                />
+              </picture>
               <div class="our-team__member">
                 <h3 class="our-team__staff section-title">Николай Тарасов</h3>
                 <p class="our-team__job">Marketing</p>
@@ -372,7 +483,34 @@
               </div>
             </li>
             <li class="our-team__item">
-              <img class="our-team__card" src="images/img-7.jpg" alt="img-7" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/web-studio/1200/img-7.jpg       1x,
+                    ./images/web-studio/1200-x2/img-7-x2.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/web-studio/768/img-7-tab.jpg       1x,
+                    ./images/web-studio/768-x2/img-7-tab-x2.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/web-studio/480/img-7-mob.jpg       1x,
+                    ./images/web-studio/480-x2/img-7-mob-x2.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  class="our-team__card"
+                  src="./images/web-studio/480/img-7-mob.jpg"
+                  alt="img-7"
+                />
+              </picture>
               <div class="our-team__member">
                 <h3 class="our-team__staff section-title">Михаил Ермаков</h3>
                 <p class="our-team__job">UI Designer</p>
@@ -462,63 +600,65 @@
       </section>
     </main>
     <!-- Page footer -->
-    <!-- <footer class="page-footer">
+    <footer class="page-footer">
       <div class="container footer-container">
-        <div class="address-info">
-          <div class="footer-logo">
-            <a href="./index.html" class="logo accent-logo"
-              ><span class="logo__item">Web</span
-              ><span class="page-footer__logo">Studio</span></a
-            >
+        <div class="footer-container-tablet">
+          <div class="address-info">
+            <div class="footer-logo">
+              <a href="./index.html" class="logo accent-logo"
+                ><span class="logo__item">Web</span
+                ><span class="page-footer__logo">Studio</span></a
+              >
+            </div>
+            <address class="address">г. Киев, пр-т Лес и Украинки, 26</address>
+            <ul class="footer-contact">
+              <li class="footer-contact__item">
+                <a
+                  class="footer-contact__mail-link"
+                  href="malito:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="footer-contact__item">
+                <a class="footer-contact__tel-link" href="tel:+380961111111"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
           </div>
-          <address class="address">г. Киев, пр-т Лес и Украинки, 26</address>
-          <ul class="footer-contact">
-            <li class="footer-contact__item">
-              <a
-                class="footer-contact__mail-link"
-                href="malito:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="footer-contact__item">
-              <a class="footer-contact__tel-link" href="tel:+380961111111"
-                >+38 099 111 11 11</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="footer-net">
-          <h2 class="footer-net__title section-title">Присоединяйтесь</h2>
-          <ul class="footer-net__list">
-            <li class="footer-net__item">
-              <a class="footer-net__link social-link" href=""
-                ><svg class="footer-net__icon">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-net__item">
-              <a class="footer-net__link social-link" href=""
-                ><svg class="footer-net__icon">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-net__item">
-              <a class="social-link footer-net__link" href=""
-                ><svg class="footer-net__icon">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-net__item">
-              <a class="footer-net__link social-link" href=""
-                ><svg class="footer-net__icon">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          <div class="footer-net">
+            <h2 class="footer-net__title section-title">Присоединяйтесь</h2>
+            <ul class="footer-net__list">
+              <li class="footer-net__item">
+                <a class="footer-net__link social-link" href=""
+                  ><svg class="footer-net__icon">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-net__item">
+                <a class="footer-net__link social-link" href=""
+                  ><svg class="footer-net__icon">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-net__item">
+                <a class="social-link footer-net__link" href=""
+                  ><svg class="footer-net__icon">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-net__item">
+                <a class="footer-net__link social-link" href=""
+                  ><svg class="footer-net__icon">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="footer-subscribe">
           <h2 class="footer-net__title section-title">
@@ -538,7 +678,7 @@
           </button>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!-- Модалка -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -601,8 +741,10 @@
                 <use href="./images/icons.svg#icon-check"></use>
               </svg>
             </span>
-            Соглашаюсь с рассылкой и принимаю
-            <a class="link-doc" href="">Условия договора</a>
+            <p class="check__text">
+              Соглашаюсь с рассылкой и принимаю
+              <a class="link-doc" href="">Условия договора</a>
+            </p>
           </label>
           <button class="submit-button" type="submit">Отправить</button>
         </form>

@@ -116,8 +116,8 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: var(--primary-text-color);
-  fill: var(--primary-text-color);
+  color: $primary-text-color;
+  fill: $primary-text-color;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
@@ -150,7 +150,7 @@
   height: 100vh;
   padding: 32px;
   background-color: $primary-white-color;
-  z-index: 30;
+  z-index: 999;
 
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
@@ -212,15 +212,13 @@
   line-height: 1.17;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: var(--primary-text-color);
-  fill: var(--primary-text-color);
+  color: $primary-text-color;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
   &:hover,
   &:focus {
     color: $accent-color;
-    fill: $accent-color;
   }
 }
 
@@ -230,8 +228,8 @@
   line-height: 1.16;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: var(--primary-text-color);
-  fill: var(--primary-text-color);
+  color: $primary-text-color;
+  fill: $primary-text-color;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
@@ -275,7 +273,7 @@
   letter-spacing: 0.02em;
   text-decoration: none;
   outline: none;
-  color: $accent-color;
+  color: $primary-text-color;
   &:focus,
   &:hover {
     color: $accent-color;

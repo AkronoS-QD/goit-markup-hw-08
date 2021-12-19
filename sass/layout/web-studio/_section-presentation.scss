@@ -31,6 +31,7 @@
 }
 
 .presentation__thumb {
+  position: relative;
   &::before {
     position: absolute;
     content: "";
@@ -59,8 +60,4 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $primary-white-color;
-}
-
-.presentation__thumb {
-  position: relative;
 }
