@@ -75,66 +75,70 @@
               </a>
             </li>
           </ul>
-          <div class="menu-container js-menu-container" id="mobile-menu">
-            <button class="menu-toggle js-close-menu">
-              <svg width="40" height="40">
-                <use
-                  class="menu-button__icon-cross"
-                  href="images/icons.svg#icon-close"
-                ></use>
-              </svg>
-            </button>
-            <!-- мобильное меню -->
-            <div class="mobile-menu mobile-container">
-              <ul class="phone-menu">
-                <li class="phone-menu__item">
-                  <a
-                    class="phone-menu__link currentlink-mobile"
-                    href="./index.html"
-                    >Студия</a
-                  >
-                </li>
-                <li class="phone-menu__item">
-                  <a class="phone-menu__link" href="./portfolio.html"
-                    >Портфолио</a
-                  >
-                </li>
-                <li class="phone-menu__item">
-                  <a class="phone-menu__link" href="">Контакты</a>
-                </li>
-              </ul>
-              <ul class="mobile-contact">
-                <li class="mobile-contact__item">
-                  <a class="mobile-contact__link-tel" href="tel:+380961111111">
-                    +38 099 111 11 11
-                  </a>
-                </li>
-                <li class="mobile-contact__item">
-                  <a
-                    class="mobile-contact__link-email"
-                    href="malito:info@devstudio.com"
-                  >
-                    info@devstudio.com</a
-                  >
-                </li>
-              </ul>
-              <ul class="mobile-social">
-                <li class="mobile-social__item">
-                  <a class="mobile-social__link" href="">Instagram</a>
-                </li>
-
-                <li class="mobile-social__item">
-                  <a class="mobile-social__link" href="">Twitter</a>
-                </li>
-
-                <li class="mobile-social__item">
-                  <a class="mobile-social__link" href="">Facebook</a>
-                </li>
-
-                <li class="mobile-social__item">
-                  <a class="mobile-social__link" href="">LinkedIn</a>
-                </li>
-              </ul>
+          <!-- мобильное меню -->
+          <div class="mob-menu js-menu-container" id="mobile-menu">
+            <div class="mobile-container">
+              <div class="mob-menu-top">
+                <button class="menu-toggle js-close-menu">
+                  <svg width="40" height="40">
+                    <use
+                      class="menu-button__icon-cross"
+                      href="images/icons.svg#icon-close"
+                    ></use>
+                  </svg>
+                </button>
+                <ul class="phone-menu">
+                  <li class="phone-menu__item">
+                    <a
+                      class="phone-menu__link currentlink-mobile"
+                      href="./index.html"
+                      >Студия</a
+                    >
+                  </li>
+                  <li class="phone-menu__item">
+                    <a class="phone-menu__link" href="./portfolio.html"
+                      >Портфолио</a
+                    >
+                  </li>
+                  <li class="phone-menu__item">
+                    <a class="phone-menu__link" href="">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mob-menu-bottom">
+                <ul class="mobile-contact">
+                  <li class="mobile-contact__item">
+                    <a
+                      class="mobile-contact__link-tel"
+                      href="tel:+380961111111"
+                    >
+                      +38 099 111 11 11
+                    </a>
+                  </li>
+                  <li class="mobile-contact__item">
+                    <a
+                      class="mobile-contact__link-email"
+                      href="malito:info@devstudio.com"
+                    >
+                      info@devstudio.com</a
+                    >
+                  </li>
+                </ul>
+                <ul class="mobile-social">
+                  <li class="mobile-social__item">
+                    <a class="mobile-social__link" href="">Instagram</a>
+                  </li>
+                  <li class="mobile-social__item">
+                    <a class="mobile-social__link" href="">Twitter</a>
+                  </li>
+                  <li class="mobile-social__item">
+                    <a class="mobile-social__link" href="">Facebook</a>
+                  </li>
+                  <li class="mobile-social__item">
+                    <a class="mobile-social__link" href="">LinkedIn</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -602,7 +606,7 @@
     <!-- Page footer -->
     <footer class="page-footer">
       <div class="container footer-container">
-        <div class="footer-container-tablet">
+        <div class="footer-tablet">
           <div class="address-info">
             <div class="footer-logo">
               <a href="./index.html" class="logo accent-logo"

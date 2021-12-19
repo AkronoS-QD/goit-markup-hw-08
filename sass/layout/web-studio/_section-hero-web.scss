@@ -3,6 +3,8 @@
   padding-bottom: 198px;
   text-align: center;
   height: 400px;
+  width: 100%;
+  background-size: 480px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -22,6 +24,7 @@
   }
   @media screen and (min-width: 768px) {
     height: 400px;
+    background-size: 768px;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -41,6 +44,7 @@
     padding-top: 200px;
     padding-bottom: 280px;
     height: 600px;
+    background-size: 1600px;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)

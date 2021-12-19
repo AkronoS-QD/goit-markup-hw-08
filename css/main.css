@@ -156,7 +156,7 @@ body {
   fill: #2196f3;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .menu-toggle {
     display: none;
   }
@@ -282,7 +282,7 @@ body {
   margin-right: 10px;
 }
 
-.menu-container {
+.mob-menu {
   position: fixed;
   top: 0;
   left: 0;
@@ -295,14 +295,21 @@ body {
   transition: transform 250ms ease-in-out;
 }
 
-.menu-container .menu-toggle {
+.mob-menu .menu-toggle {
   position: absolute;
   top: 16px;
   right: 16px;
   color: #fff;
 }
 
-.menu-container.is-open {
+.mob-menu .mobile-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mob-menu.is-open {
   transform: translateX(0);
 }
 
@@ -332,10 +339,6 @@ body {
 
 .phone-menu__item:last-child {
   margin-bottom: 0;
-}
-
-.mobile-contact {
-  margin-top: 306px;
 }
 
 .mobile-contact__item {
@@ -392,17 +395,30 @@ body {
 
 .mobile-social {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 64px;
 }
 
 .mobile-social__item {
-  position: relative;
   display: block;
-  margin-right: 20px;
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 2px solid rgba(33, 33, 33, 0.2);
 }
 
 .mobile-social__item:last-child {
   margin-right: 0;
+  border-right: none;
+  padding-right: 0;
+}
+
+@media screen and (max-width: 430px) {
+  .mobile-social__item {
+    margin-bottom: 10px;
+  }
+  .mobile-social__item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
 }
 
 .mobile-social__link {
@@ -411,31 +427,11 @@ body {
   line-height: 1.22;
   letter-spacing: 0.02em;
   text-decoration: none;
-  outline: none;
   color: #757575;
 }
 
 .mobile-social__link:focus, .mobile-social__link:hover {
   color: #2196f3;
-}
-
-.mobile-social__link::after {
-  position: absolute;
-  content: "";
-  right: 30;
-  bottom: 200;
-  display: block;
-  width: 2px;
-  height: 22px;
-  border-radius: 2px;
-  background-color: orange;
-  background-color: rgba(33, 33, 33, 0.2);
-}
-
-@media screen and (min-width: 768px) {
-  .menu-toggle {
-    display: none;
-  }
 }
 
 .logo {
@@ -463,6 +459,8 @@ body {
   padding-bottom: 198px;
   text-align: center;
   height: 400px;
+  width: 100%;
+  background-size: 480px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/web-studio/480/hero-img-480.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -477,6 +475,7 @@ body {
 @media screen and (min-width: 768px) {
   .hero {
     height: 400px;
+    background-size: 768px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/web-studio/768/hero-img-768.jpg);
   }
 }
@@ -492,6 +491,7 @@ body {
     padding-top: 200px;
     padding-bottom: 280px;
     height: 600px;
+    background-size: 1600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/web-studio/1200/hero-img-1200.jpg);
   }
 }
@@ -932,8 +932,16 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .footer-container-tablet {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-tablet {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-tablet {
     display: flex;
     align-items: baseline;
   }
@@ -945,19 +953,18 @@ body {
   background: #2f303a;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .address-info {
-    margin-left: 76px;
-    text-align: center;
-  }
-}
-
 .footer-logo {
   margin-bottom: 20px;
 }
 
 @media screen and (max-width: 768px) {
   .footer-logo {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .address-info {
     text-align: center;
   }
 }
@@ -1012,9 +1019,9 @@ body {
   margin-top: 60px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .footer-net {
-    margin-left: 165px;
+    margin-top: 0;
   }
 }
 
@@ -1072,7 +1079,12 @@ body {
 /* ------------------------------footer-subscribe----------------------------- */
 .footer-subscribe {
   text-align: center;
-  margin-top: 60px;
+}
+
+@media screen and (max-width: 1200px) {
+  .footer-subscribe {
+    margin-top: 60px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1085,7 +1097,7 @@ body {
 .footer-subscribe__email-input {
   margin-left: auto;
   padding: 15px 16px;
-  min-width: 450px;
+  min-width: 90vw;
   margin-right: 12px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1098,6 +1110,12 @@ body {
 .footer-subscribe__email-input:focus {
   color: #ffffff;
   background-color: transparent;
+}
+
+@media screen and (min-width: 480px) {
+  .footer-subscribe__email-input {
+    min-width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1499,7 +1517,7 @@ body {
   padding-top: 6px;
   padding-bottom: 6px;
   border: none;
-  background-color: orange;
+  background-color: #f5f4fa;
   border-radius: 4px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1537,9 +1555,12 @@ body {
 
 .feature-list__item {
   outline: none;
-  background-color: orange;
   display: flex;
   flex-wrap: wrap;
+}
+
+.feature-list__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .feature-list__item:focus, .feature-list__item:hover {
@@ -1579,7 +1600,6 @@ body {
 .feature-list__thumb {
   position: relative;
   overflow: hidden;
-  border: 3px solid red;
 }
 
 .feature-list__overlay {
@@ -1615,6 +1635,14 @@ body {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .feature-list__product {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
 .feature-list__describtion {
   position: absolute;
   max-width: 322px;
@@ -1635,6 +1663,12 @@ body {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .feature-list__frame {
+    flex-grow: 1;
+  }
 }
 
 .feature-list__label {
